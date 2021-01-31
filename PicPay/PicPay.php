@@ -45,4 +45,22 @@ class PicPay {
 		
         return $preference_result;
     }
+	
+    /**
+     * Get a checkout preference
+     * @param string $id
+     * @return array(json)
+     */
+    public function get_preference($id){
+        $request = [
+            'uri' => "/payments/{$id}/status",
+			'headers' => [
+				'x-picpay-token' => $this->x_picpay_token
+			]
+        ];
+
+        $preference_result = PicPayRestClient::get($request);
+		
+        return $preference_result;
+    }
 }
