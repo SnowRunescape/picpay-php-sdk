@@ -39,6 +39,16 @@ $preference = $picpay->create_preference([
 $url = $preference["response"]["paymentUrl"];
 ```
 
+#### Validando se o pagamento foi realizado
+
+```php
+$picpay = new \PicPay\PicPay("x-picpay-token", "x-seller-token");
+
+$data = json_decode(file_get_contents("php://input"), true);
+
+$payment = $picpay->get_preference($data["referenceId"]);
+```
+
 ## Contribuindo
 
 Se você encontrar um problema ou tiver alguma sugestão de melhoria, sinta-se à vontade para abrir uma issue ou enviar um pull request.
