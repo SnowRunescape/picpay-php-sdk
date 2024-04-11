@@ -1,0 +1,19 @@
+{
+  "name": "snowrunescape/picpay-php-sdk",
+  "description": "PicPay PHP SDK",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Bruno Caitano",
+      "email": "snowrunescape@snowdev.com.br",
+      "role": "Owner",
+      "homepage": "https://snowdev.com.br"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PicPay\\": "src/"
+    }
+  }
+}

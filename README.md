@@ -1,1 +1,1 @@
-# PicPay-SDK-PHP
+# PicPay-PHP-SDK
